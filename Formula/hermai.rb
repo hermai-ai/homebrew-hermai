@@ -5,21 +5,21 @@
 class Hermai < Formula
   desc "Turn any website into a structured JSON API for AI agents."
   homepage "https://hermai.ai"
-  version "0.2.2"
+  version "0.2.3"
   license "AGPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hermai-ai/hermai-cli/releases/download/v0.2.2/hermai_0.2.2_darwin_amd64.tar.gz"
-      sha256 "676f0630b9638532cc931051c50047f75a2d215d46fe88041d59f8c55bf57803"
+      url "https://github.com/hermai-ai/hermai-cli/releases/download/v0.2.3/hermai_0.2.3_darwin_amd64.tar.gz"
+      sha256 "e8d23fcb1f4ece7379c67f6b230b9e8a51e27f4cdca1951482145a101aabb485"
 
       define_method(:install) do
         bin.install "hermai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hermai-ai/hermai-cli/releases/download/v0.2.2/hermai_0.2.2_darwin_arm64.tar.gz"
-      sha256 "b1dfea6b916e2cdada42dbe47f91438d8e323500aa19f177a431f449af1e39b2"
+      url "https://github.com/hermai-ai/hermai-cli/releases/download/v0.2.3/hermai_0.2.3_darwin_arm64.tar.gz"
+      sha256 "fecf7f934357f91da5ce1920c916d44607e2247676b561561263d0eeb3d872b5"
 
       define_method(:install) do
         bin.install "hermai"
@@ -29,15 +29,15 @@ class Hermai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hermai-ai/hermai-cli/releases/download/v0.2.2/hermai_0.2.2_linux_amd64.tar.gz"
-      sha256 "9dc6b70748127b9b7d7f71b830ddd78e54197985002dca0213e0078ca31f36ab"
+      url "https://github.com/hermai-ai/hermai-cli/releases/download/v0.2.3/hermai_0.2.3_linux_amd64.tar.gz"
+      sha256 "f451d7acac47a076925be7aef735b51e77b7a3758b23b39b859afed441416590"
       define_method(:install) do
         bin.install "hermai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hermai-ai/hermai-cli/releases/download/v0.2.2/hermai_0.2.2_linux_arm64.tar.gz"
-      sha256 "1e96430c0aac6cb13903a74e9635d091f16f323eeff88d6c5b932043eae34022"
+      url "https://github.com/hermai-ai/hermai-cli/releases/download/v0.2.3/hermai_0.2.3_linux_arm64.tar.gz"
+      sha256 "1cea4f1aa65649fd7b6abdb5e3eb5f5b23e37ebd7966de5c5d48eb9db8b0bbc8"
       define_method(:install) do
         bin.install "hermai"
       end
